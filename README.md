@@ -1,25 +1,38 @@
-este automatizado Mobile
+
+# Teste automatizado Mobile
 Testes foram feitos no Apk da Woocommerce. Com intuito de validar o login da loja EBAC- SHOP
+ 
 
-Pre-requisites
-WSL2 Precisa-se estar ativado em sua máquina
 
-Android Studio: https://developer.android.com/studio
+## Pre-requisites
 
-Vs Code: https://code.visualstudio.com/download
+**WSL2** Precisa-se estar ativado em sua máquina
 
-Appium Server GUI: https://github.com/appium/appium-desktop
+**Android Studio:** https://developer.android.com/studio 
 
-JDK 20: https://www.oracle.com/br/java/technologies/downloads/
+**Vs Code:** https://code.visualstudio.com/download
 
-Appium Inspector: https://github.com/appium/appium-inspector/releases
+**Appium Server GUI:** https://github.com/appium/appium-desktop 
 
-APK Woocomerce Versão 7.3.1: https://github.com/woocommerce/woocommerce-android/releases
+**JDK 20:** https://www.oracle.com/br/java/technologies/downloads/
 
-Installation
-Wdio
+**Appium Inspector:** https://github.com/appium/appium-inspector/releases
 
+**APK Woocomerce Versão 7.3.1:** https://github.com/woocommerce/woocommerce-android/releases
+
+
+
+
+
+
+## Installation
+
+**Wdio**
+
+```bash
  npm init wdio .
+```
+````
 exports.config = {
     hostname: '127.0.0.1',
     port: 4723,
@@ -43,13 +56,28 @@ exports.config = {
     connectionRetryTimeout: 120000,
     //services: ['appium'],
     framework: 'mocha'
-Join
+````
 
+
+**Join**
+```bash
  npm install join
+```
+
+````
 const { join } = require('path')
-Running Tests
+````
+
+
+## Running Tests
 Comando para rodar em sua máquina
 
+```bash
   npm test
-Documentation
-Documentation
+```
+
+
+## Documentation
+
+[Documentation](https://webdriver.io/docs/api/element)
+
